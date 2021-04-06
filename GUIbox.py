@@ -64,8 +64,19 @@
 #         print(index)
     
     
-input_file = open("input1.txt", "a")
+# input_file = open("input1.txt", "a")
     
+# input_file.write("what")
+# input_file.close()
 
-input_file.write("what")
-input_file.close()
+
+# Classes and object
+
+class student():
+    def __init__(self, name, major, gpa, age , is_on_probation):
+      self.name = name
+      self.age = age
+      self.gpa = gpa
+      self.major = major
+      self.is_on_probation = is_on_probation
+
