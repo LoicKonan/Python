@@ -11,13 +11,15 @@
 # window.mainloop()
 
 
-chararcter_name = "John"
-character_age = "70"
+# name = input("what is your name? ")
+# age = input("what is your age? ")
+
+# print ("Hello " + name + " You are : " + age + " years old")
 
 
-print("There once was a man named " + chararcter_name)
-print("he was " + character_age + " yrs old. ")
 
-chararcter_name = "Tom"
-print("he really liked the name " + chararcter_name)
-print("but didn't like being 70. ")
+
+coordinates = (4,5)
+
+
+print(coordinates[1])
