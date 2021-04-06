@@ -33,12 +33,16 @@
 
 
 # if statement
-is_male = True
-is_tall = True
+# is_male = True
+# is_tall = True
 
 
-if is_male and  is_tall:
-    print("you are a male and Tall ")
+# if is_male and  is_tall:
+#     print("you are a male and Tall ")
     
-else:
-    print("You are gay")
+# elif is_male:
+#     print("You are gay")
+    
+# else: 
+#     print("YOu crazy")
+
