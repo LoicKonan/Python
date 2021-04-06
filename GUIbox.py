@@ -72,18 +72,56 @@
 
 # Classes and object
 
-class student():
-    def __init__(self, name, major, gpa, age , is_on_probation):
-      self.name = name
-      self.age = age
-      self.gpa = gpa
-      self.major = major
-      self.is_on_probation = is_on_probation
+# class student():
+#     def __init__(self, name, major, gpa, age , is_on_probation):
+#       self.name = name
+#       self.age = age
+#       self.gpa = gpa
+#       self.major = major
+#       self.is_on_probation = is_on_probation
 
 
 
-student1 = student("Loic", "CS", 3.99, 27, False)
-student2 = student("koffic", "History", 3.92, 27, False)
+# student1 = student("Loic", "CS", 3.99, 27, False)
+# student2 = student("koffic", "History", 3.92, 27, False)
 
-print(student2)
+# print(student2)
 
+
+
+
+
+mydict = {
+  'key1' : 'value1',
+  'key2' : 'value2',
+  'key3' : 'value3',
+  'key4' : 'value4',
+  'key5' : 'value5',
+  }
+
+for k,v in mydict.items():
+  print(k)
+  print(v)
+  
+  
+  class StateHelp()(object):
+    def __init__(self, file_name = None):
+      with open("states.json") as f:
+      data = f.read() 
+      self.states = json.loads(data)
+      
+      
+      def getStatesName(self, abbr):
+        for state in states:
+            if state['abbreviation'] == abbr:
+              return state['name']
+          return None
+      
+      
+      def getStatesABR(self,name):
+        for state in states:
+            if state['name'] == name:
+              return state['abbreviation']
+          return None
+      
+      
