@@ -46,3 +46,13 @@
 # else: 
 #     print("YOu crazy")
 
+
+# dictionaries
+
+
+i = 1
+
+while i < 3:
+    print("I love u")
+    i+=1
+    
