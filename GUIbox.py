@@ -19,7 +19,26 @@
 
 
 
-coordinates = (4,5) # Good for coordinates. data that can't be change
+# coordinates = (4,5) # Good for coordinates. data that can't be change
+# print(coordinates[1])
 
 
-print(coordinates[1])
+# Functions
+# def cube(number):
+#     return pow(number,3) 
+
+# result = cube(4)
+
+# print(result)
+
+
+# if statement
+is_male = True
+is_tall = True
+
+
+if is_male and  is_tall:
+    print("you are a male and Tall ")
+    
+else:
+    print("You are gay")
