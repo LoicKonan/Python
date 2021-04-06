@@ -17,8 +17,6 @@
 # print ("Hello " + name + " You are : " + age + " years old")
 
 
-
-
 # coordinates = (4,5) # Good for coordinates. data that can't be change
 # print(coordinates[1])
 
@@ -50,9 +48,24 @@
 # dictionaries
 
 
-i = 1
-
-while i < 3:
-    print("I love u")
-    i+=1
+# i = 1
+# while i < 3:
+#     print("I love u")
+#     i+=1
     
+# print("\n\nLoop is done")
+
+
+# friends = ["Jim", "Karen", "Kevin"]
+
+
+# for index in range(5):
+#     if index == 0:
+#         print(index)
+    
+    
+input_file = open("input1.txt", "a")
+    
+
+input_file.write("what")
+input_file.close()
