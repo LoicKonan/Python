@@ -86,3 +86,4 @@ student1 = student("Loic", "CS", 3.99, 27, False)
 student2 = student("koffic", "History", 3.92, 27, False)
 
 print(student2)
+
