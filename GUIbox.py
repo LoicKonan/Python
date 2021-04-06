@@ -80,3 +80,5 @@ class student():
       self.major = major
       self.is_on_probation = is_on_probation
 
+
+
