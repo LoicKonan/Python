@@ -19,7 +19,7 @@
 
 
 
-coordinates = (4,5)
+coordinates = (4,5) # Good for coordinates. data that can't be change
 
 
 print(coordinates[1])
