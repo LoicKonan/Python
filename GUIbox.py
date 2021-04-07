@@ -91,42 +91,16 @@
 
 
 
-# mydict = {
-#   'key1' : 'value1',
-#   'key2' : 'value2',
-#   'key3' : 'value3',
-#   'key4' : 'value4',
-#   'key5' : 'value5',
-#   }
+mydict = {
+  'key1' : 'value1',
+  'key2' : 'value2',
+  'key3' : 'value3',
+  'key4' : 'value4',
+  'key5' : 'value5',
+  }
 
-# for k,v in mydict.items():
-#   print(k)
-#   print(v)
+for k,v in mydict.items():
+  print(k)
+  print(v)
   
   
-  
-class StateHelp(object):
-    def __init__(self, file_name = None):
-      with open("states.json") as f:
-        data = f.read() 
-        self.states = json.loads(data)
-      
-      
-    def getStatesName(self, abbr):
-        for state in self.states:
-            if state['abbreviation'] == abbr:
-              return state['name']
-        return None
-      
-      
-    def getStatesABR(self,name):
-        for state in self.states:
-            if state['name'] == name:
-              return state['abbreviation']
-        return None
-      
-      
-if __name__ == '__main__':
-  sh = StateHelp()
-  print(sh.getStatesName('AK'))
-  print(sh.getStatesABR('TEXAS'))
