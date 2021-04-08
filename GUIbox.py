@@ -132,9 +132,14 @@ if __name__ == '__main__':
   
   nums = [2,3,4,3,5,6,7]
   
+  fruits = ["apple", "banana", "cherry","kiwi", "mango"]
+  
+  newlist = [x for x in fruits if "a" in x]
+  
+  
   print(nums[:4])
   
-  for i in range(0,100,18):
+  for i in range(0,100,18,):
     print(i)
   
   o1 = Order()
