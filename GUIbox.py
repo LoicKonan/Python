@@ -130,10 +130,17 @@ def add_nums(*args):
 
 if __name__ == '__main__':
   
+  nums = [2,3,4,3,5,6,7]
+  
+  print(nums[:4])
+  
+  
   o1 = Order()
   
   some_function(fname='Joe',lname='Smith', age = 20,bday = 'unkown')
   
   print(add_nums(1,2,3,4,8,9))
+  
+  
   
   
