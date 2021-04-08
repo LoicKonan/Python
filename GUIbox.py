@@ -134,6 +134,8 @@ if __name__ == '__main__':
   
   print(nums[:4])
   
+  for i in range(0,100,18):
+    print(i)
   
   o1 = Order()
   
