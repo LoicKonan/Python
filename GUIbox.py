@@ -100,10 +100,11 @@
 #   print(k)
 #   print(v)
   
-  import sys 
+
+import sys 
   
-  class Order:
-    def def __init__(self, cart =[], customer = None):
+class Order:
+    def __init__(self, cart =[], customer = None):
       if not isinstance(cart,list):
         print("Cart should be a list")
         sys.exit(0)
@@ -116,8 +117,8 @@
 def some_function(**kwargs):
   pass
 
-kwargs = keyword arguments
-args - arguments = kwargs
+# kwargs = keyword arguments
+# args - arguments = kwargs
 
 if __name__ == '__main__':
   
