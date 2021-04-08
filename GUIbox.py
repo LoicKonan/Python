@@ -88,19 +88,39 @@
 # print(student2)
 
 
+# mydict = {
+#   'key1' : 'value1',
+#   'key2' : 'value2',
+#   'key3' : 'value3',
+#   'key4' : 'value4',
+#   'key5' : 'value5',
+#   }
 
-
-
-mydict = {
-  'key1' : 'value1',
-  'key2' : 'value2',
-  'key3' : 'value3',
-  'key4' : 'value4',
-  'key5' : 'value5',
-  }
-
-for k,v in mydict.items():
-  print(k)
-  print(v)
+# for k,v in mydict.items():
+#   print(k)
+#   print(v)
   
+  import sys 
   
+  class Order:
+    def def __init__(self, cart =[], customer = None):
+      if not isinstance(cart,list):
+        print("Cart should be a list")
+        sys.exit(0)
+        
+        
+      self.cart = list(cart)
+      self.customer = customer
+      
+      
+def some_function(**kwargs):
+  pass
+
+kwargs = keyword arguments
+args - arguments = kwargs
+
+if __name__ == '__main__':
+  
+  o1 = Order()
+  
+  some_function(fname='Joe',lname='Smith', age = 20,bday = 'unkown')
