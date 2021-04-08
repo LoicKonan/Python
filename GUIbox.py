@@ -107,16 +107,27 @@ class Order:
     def __init__(self, cart =[], customer = None):
       if not isinstance(cart,list):
         print("Cart should be a list")
-        sys.exit(0)
-        
+        sys.exit(0)       
         
       self.cart = list(cart)
       self.customer = customer
       
       
+      
+      
+      
 def some_function(**kwargs):
   pass
 
+
+
+def add_nums(*args):
+  sum = 0
+  for x in args:
+    sum += x
+    
+    return sum
+  
 # kwargs = keyword arguments
 # args - arguments = kwargs
 
@@ -126,5 +137,6 @@ if __name__ == '__main__':
   
   some_function(fname='Joe',lname='Smith', age = 20,bday = 'unkown')
   
+  print(add_nums(1,2,3,4,8,9))
   
   
