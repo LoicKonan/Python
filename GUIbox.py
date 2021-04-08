@@ -111,10 +111,7 @@ class Order:
         
       self.cart = list(cart)
       self.customer = customer
-      
-      
-      
-      
+                        
       
 def some_function(**kwargs):
   pass
