@@ -138,13 +138,14 @@ if __name__ == '__main__':
   
   
   print(nums[:4])
+  print(nums[::-1])
   
   for i in range(0,100,18,):
     print(i)
   
   o1 = Order()
   
-  some_function(fname='Joe',lname='Smith', age = 20,bday = 'unkown')
+  some_function(fname='Joe', lname='Smith', age = 20, bday = 'unkown')
   
   print(add_nums(1,2,3,4,8,9))
   
