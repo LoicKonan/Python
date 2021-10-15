@@ -1,6 +1,6 @@
 ## Loic Konan
 
-#### Repo: Python Pratice Lessons
+#### Repo: Python Lessons
 
 #### Email: Loickonan.lk@gmail.com
 
