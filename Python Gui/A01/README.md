@@ -2,7 +2,7 @@
 
 |      #      | Folder Link  | Assignment Description | Status             |
 | :---------: | ------------ | ---------------------- | ------------------ |
-| [01](./A01) | [A01](./A01) | [](./A01)              | :heavy_check_mark: |
+| [01](./A01) | [A01](./A01) | [GUIbox](./A01)        | :heavy_check_mark: |
 | [02](./A02) | [A02](./A02) | [](./A02)              | :heavy_check_mark: |
 | [03](./A03) | [A03](./A03) | [](./A03)              | :heavy_check_mark: |
 | [04](./A04) | [A04](./A04) | [](./A04)              | :heavy_check_mark: |
