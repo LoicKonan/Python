@@ -22,35 +22,41 @@
 
 ### Files
 
-|   #   | File               | Description                     |
-| :---: | ------------------ | ------------------------------- |
-|   1   | [main.py](main.py) | Solution for the first problem  |
+|   #   | File               | Description                    |
+| :---: | ------------------ | ------------------------------ |
+|   1   | [main.py](main.py) | Solution for the first problem |
 
 
 
 <h2 align = "center">Rock, Paper, Scissors Game </h2>
 
-> - Write a program that lets the user play the game of Rock, Paper, Scissors against the computer. The program should work as follows:
-> - 1. When the program begins, a random number in the range of 1 through 3 is generated. 
-> - For this, you need to import the random library   (import random) and use the randint function (  random.randint(1, 3) )
+> - Write a program that lets the user play the game of **Rock, Paper, Scissors** against the computer. The program should work as follows:
+> - 1.
+>   - When the program begins, a random number in the ***range of 1 through 3 is generated***.
+>   - For this, you need to import the random library **(import random) and use the randint function (random.randint(1, 3))**
 >
-> - 2. If the number is 1, then the computer has chosen rock. If the number is 2, then the computer has chosen paper.
-> - If the number is 3, then the computer has chosen scissors. (Don’t display the computer’s choice yet.)
+> - 2.
+>   - If the number is 1, then the computer has chosen rock. 
+>   - If the number is 2, then the computer has chosen paper.
+>   - If the number is 3, then the computer has chosen scissors. (Don’t display the computer’s choice yet.)
 >
-> - 3. The user enters his or her choice of “rock,” “paper,” or “scissors” at the keyboard.
-> - You can say something like: 
-> - Enter 1 for rock, 2 for paper, 3 for scissors
+> - 3.
+>   - The user enters his or her choice of **“rock,” “paper,” or “scissors”** at the keyboard.
+>   - You can say something like:
+>     - **Enter 1 for rock, 2 for paper, 3 for scissors**
 >
-> - 4. The computer’s choice is displayed. And the User’s choice is displayed.
+> - 4.
+>   - The computer’s choice is displayed. And the User’s choice is displayed.
 >
-> - 5. TheA winner is selected according to the following rules:
-> - If one player chooses rock and the other player chooses scissors, then rock wins. (The rock smashes the scissors.)
-> - If one player chooses scissors and the other player chooses paper, then scissors wins. (Scissors cuts paper.)
-> - If one player chooses paper and the other player chooses rock, then paper wins. (Paper wraps rock.)
-> - If both players make the same choice, the game must be played again to determine the winner.
+> - 5.
+>   - The winner is selected according to the following rules:
+>     - If one player chooses rock and the other player chooses scissors, then rock wins. **(The rock smashes the scissors.)**
+>     - If one player chooses scissors and the other player chooses paper, then scissors wins. **(Scissors cuts paper.)**
+>     - If one player chooses paper and the other player chooses rock, then paper wins. **(Paper wraps rock.)**
+>     - If both players make the same choice, **the game must be played again to determine the winner**.
 
 ### Files
 
-|   #   | File               | Description                     |
-| :---: | ------------------ | ------------------------------- |
+|   #   | File                | Description                     |
+| :---: | ------------------- | ------------------------------- |
 |   1   | [main1.py](main.py) | Solution for the second problem |
