@@ -4,6 +4,8 @@
 
 ### Description
 
+<h2 align = "center"> 10194 - Factors </h2>
+
 > - Write a program that will keep running (i.e. doing what is being asked below), till the user inputs an 'E' (for exit).
 > - Ask the user for a number.
 > - The program should display all positive factors of the number that is input.
@@ -17,8 +19,17 @@
 >     - Display the highest 3 factors (e.g. for 150 - the highest 3 factors are 50, 75, 150)
 >     - Display the average of the above 3 factors (e.g. for 150 - average is 91.667). And the Program Ends !
 >
->
->
+
+### Files
+
+|   #   | File               | Description                     |
+| :---: | ------------------ | ------------------------------- |
+|   1   | [main.py](main.py) | Solution for the first problem  |
+
+
+
+<h2 align = "center"> 10194 - Rock, Paper, Scissors Game </h2>
+
 > - Write a program that lets the user play the game of Rock, Paper, Scissors against the computer. The program should work as follows:
 > - 1. When the program begins, a random number in the range of 1 through 3 is generated. 
 > - For this, you need to import the random library   (import random) and use the randint function (  random.randint(1, 3) )
@@ -42,5 +53,4 @@
 
 |   #   | File               | Description                     |
 | :---: | ------------------ | ------------------------------- |
-|   1   | [main.py](main.py) | Solution for the first problem  |
 |   1   | [main.py](main.py) | Solution for the second problem |
