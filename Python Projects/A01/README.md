@@ -60,4 +60,4 @@
 
 |   #   | File                | Description                     | Status                  |
 | :---: | ------------------- | ------------------------------- | ----------------------- |
-|   1   | [main1.py](main.py) | Solution for the second problem | :ballot_box_with_check: |
+|   1   | [main1.py](main1.py) | Solution for the second problem | :ballot_box_with_check: |
