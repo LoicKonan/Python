@@ -53,7 +53,7 @@ def factor(a):
     for i in range(1, a + 1):
 
         # if the passed integer is divisible by "i" then i is a factor
-        if a % i ==0:
+        if a % i == 0:
 
            #append i to the list
            list.append(i)
@@ -64,14 +64,11 @@ def factor(a):
 if __name__=="__main__":
 
     # printing the text to the console for number
-    num = int(input("Enter positive number : "))
+    i = int(input("Enter positive number : "))
     
     try:
         while not(input() == 'e'):
             
-            # variable i stores the input variable
-            i = int(input())
-
             # calling the factor method
             factors = factor(i)
 
@@ -95,4 +92,4 @@ if __name__=="__main__":
                 print("number of factors are less than 3 ")
             
     except ValueError:
-        print("You a character so bye Felicia lol !!!")
+        print("You Entered a character so bye Felicia lol !!!")
