@@ -23,6 +23,7 @@
 
 ### Files
 
-|   #   | File               | Description |
-| :---: | ------------------ | ----------- |
-|   1   | [main.py](main.py) | Main Driver |
+|   #   | File               | Description                     |
+| :---: | ------------------ | ------------------------------- |
+|   1   | [main.py](main.py) | Solution for the first problem  |
+|   1   | [main.py](main.py) | Solution for the second problem |
