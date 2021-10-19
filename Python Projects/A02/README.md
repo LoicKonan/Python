@@ -53,4 +53,4 @@
 
 |   #   | File               | Description                     |
 | :---: | ------------------ | ------------------------------- |
-|   1   | [main.py](main.py) | Solution for the second problem |
+|   1   | [main1.py](main.py) | Solution for the second problem |
