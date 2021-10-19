@@ -39,8 +39,6 @@
 # except ValueError:
 #     print("You a character so bye Felicia lol !!!")
 
-# The below code is written in python 3,
-# for successful output please execute in python3
 
 
 
@@ -66,30 +64,35 @@ def factor(a):
 if __name__=="__main__":
 
     # printing the text to the console for number
-    print("Please input a number")
+    num = int(input("Enter positive number : "))
+    
+    try:
+        while not(input() == 'e'):
+            
+            # variable i stores the input variable
+            i = int(input())
 
-    # variable i stores the input variable
-    i=int(input())
+            # calling the factor method
+            factors = factor(i)
 
-    # calling the factor method
-    factors = factor(i)
+            # printing the factors
+            print("factors are "+ str(factors))
 
-    # printing the factors
-    print("factors are "+ str(factors))
+            # printing the number of factors
+            print(" The number "+ str(i)+" has "+ str(len(factors)) + " factors")
 
-    # printing the number of factors
-    print(" The number "+ str(i)+" has "+ str(len(factors)) + " factors")
+            # check if the factors are having atleast 3
+            if len(factors) >= 3:
 
-    # check if the factors are having atleast 3
-    if len(factors) >= 3:
+                # print the top 3 factors
+                print(" Top 3 Factors are "+ str(factors[-1]) +","+ str(factors[-2]) +","+ str(factors[-3]))
 
-        # print the top 3 factors
-        print(" Top 3 Factors are "+ str(factors[-1]) +","+ str(factors[-2]) +","+ str(factors[-3]))
+                # print the average 3 factors
+                print("average of top 3 factors "+ str((factors[-1] + factors[-2] + factors[-3]) / 3))
 
-        # print the average 3 factors
-        print("average of top 3 factors "+ str((factors[-1] + factors[-2] + factors[-3]) / 3))
-
-    # else print that number of factors are less than 3
-    else:
-
-        print("number of factors are less than 3 ")
+            # else print that number of factors are less than 3
+            else:
+                print("number of factors are less than 3 ")
+            
+    except ValueError:
+        print("You a character so bye Felicia lol !!!")
