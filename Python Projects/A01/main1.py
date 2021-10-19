@@ -2,30 +2,42 @@ import random
 
 random.seed(300)
 
-def determineWinner(playerChoice, computerChoice):
+######################################################################
+# This function receive the player and the computer numbers
+# then use the if elif statement to determine who is the Pick_Winner
+# or if we have a tie.
+######################################################################
+
+def Pick_Winner(player_Number, computer_Number):
                                 # Check who won and print
-    if computerChoice == 1 and playerChoice == 2:
+    if computer_Number == 1 and player_Number == 2:
         return "Player wins!"
     
-    elif computerChoice == 2 and playerChoice == 1:
+    elif computer_Number == 2 and player_Number == 1:
         return "Computer wins!"
     
-    elif computerChoice == 3 and playerChoice == 1:
+    elif computer_Number == 3 and player_Number == 1:
         return "Player wins!"
     
-    elif computerChoice == 1 and playerChoice == 3:
+    elif computer_Number == 1 and player_Number == 3:
         return "Computer wins!"
     
-    elif computerChoice == 2 and playerChoice == 3:
+    elif computer_Number == 2 and player_Number == 3:
         return "Player wins!"
     
-    elif computerChoice == 3 and playerChoice == 2:
+    elif computer_Number == 3 and player_Number == 2:
         return "Computer wins!"
     
     else:
         return "It is a Tie!, the game must be played again to determine the winner.!!!"
 
-def convertChoice(choice):
+
+######################################################################
+# This function assign the numbers 1 , 2 , 3 to the right description
+# either a rock, paper or scissors.
+######################################################################
+
+def convert_Number(choice):
                                 # Return respective value to number
     if choice == 1:
         return 'rock'
@@ -34,10 +46,21 @@ def convertChoice(choice):
     else:
         return 'scissors'
 
-def getComputerChoice():
+
+######################################################################
+# This function return the our random number generator from 1 to 3.
+######################################################################
+
+def getComputer_Number():
     return random.randint(1, 3)
 
-def getPlayerChoice():
+
+######################################################################
+# This function prompt the user and run as long as the player does 
+# not enter the number 4 to terminate the program.
+######################################################################
+
+def getPlayer_Number():
                                 # Ask user to enter either of four
     choice = int(input('1. rock, 2. paper, 3. scissors or 4 to exit: '))
                                 # Keep asking till user enters a valid input
@@ -49,20 +72,20 @@ def getPlayerChoice():
 
 # Main
 def main():
-    player = getPlayerChoice()  # get the player choice
-    comp = getComputerChoice()  # generate the computer choice
+    player = getPlayer_Number()  # get the player choice
+    comp = getComputer_Number()  # generate the computer choice
     while player != 4:          # while the user has not chosen 4
                                 # print the player choice as a string
-        print('Player''s Choice:', convertChoice(player))
+        print('Player''s Choice:', convert_Number(player))
                                 # print the computer choice as a string
-        print('Computer''s Choice:', convertChoice(comp))
+        print('Computer''s Choice:', convert_Number(comp))
                                 # print the winner as a string
-        print(determineWinner(player, comp))
+        print(Pick_Winner(player, comp))
 
         print()
                                 # get new choices for the player and computer
-        player = getPlayerChoice()
-        comp = getComputerChoice()
+        player = getPlayer_Number()
+        comp = getComputer_Number()
 
 
 if __name__ == '__main__':
