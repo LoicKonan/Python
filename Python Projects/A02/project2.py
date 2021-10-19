@@ -44,8 +44,8 @@ if __name__=="__main__":
                 # print the top 3 factors
                 print(" Top 3 Factors are "+ str(factors[-1]) +","+ str(factors[-2]) +","+ str(factors[-3]))
 
-                # print the average 3 factors
-                print("average of top 3 factors "+ str((factors[-1] + factors[-2] + factors[-3]) / 3))
+                # print the average 3 factors, and using the round function to round the 3rd decimal points.
+                print("average of top 3 factors "+ str(round((factors[-1] + factors[-2] + factors[-3]) / 3),3))
 
             # else print that number of factors are less than 3
             else:
