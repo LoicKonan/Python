@@ -1,4 +1,4 @@
-## Project 02 - Factors
+## Project 02 - Factors && Rock, Paper, Scissors Game
 
 ### Loic Konan
 
@@ -16,6 +16,9 @@
 >   - More than 10: Do the following
 >     - Display the highest 3 factors (e.g. for 150 - the highest 3 factors are 50, 75, 150)
 >     - Display the average of the above 3 factors (e.g. for 150 - average is 91.667). And the Program Ends !
+>
+>
+>
 >
 
 ### Files
