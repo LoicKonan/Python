@@ -1,8 +1,7 @@
-
 try:
     num = int(input("Enter positive number : "))
 
-    while not (input() == 'e' | input() == 'E'):
+    while not(input() == 'e'):
 
         counter = 0
 
@@ -15,7 +14,11 @@ try:
         for i in range(1, (num+1)):
 
             if(num % i == 0):
-
+                a = b = c = 0
+                a = b   
+                b = c   
+                c = i
+                
                 counter = counter + 1
                 print(comma, i, end ='')
                 comma = ","
@@ -27,11 +30,11 @@ try:
 
         print("\nTotal number of factor are : ", counter)
 
-        print("Top 3 : ", top)
+        print('Top 3 :', a, '', b, '', c )
 
-        avg = float(sum)/3
+        avg = float(a+b+c)/3
 
         print("Average is : ", avg)
         
-except: 
-    print("You press E or e so good bye")
+except ValueError:
+    print("You a character so bye Felicia lol !!!")
