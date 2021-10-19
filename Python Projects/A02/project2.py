@@ -18,14 +18,14 @@ def factor(a):
 
 if __name__=="__main__":
     
-    print("Enter positive number : ")
+    print("Enter a positive number  or enter the letter e to end the program: ")
     
     try:
                
         while not(input() == 'e'):
             
             # printing the text to the console for number
-            i = int(input("Enter positive number : "))
+            i = int(input())
             
             # calling the factor method
             factors = factor(i)
@@ -50,4 +50,4 @@ if __name__=="__main__":
                 print("number of factors are less than 3 ")
             
     except ValueError:
-        print("You Entered a character so bye Felicia lol !!!")
+        print("You should enter a number instead, anyway bye Felicia lol !!!")
