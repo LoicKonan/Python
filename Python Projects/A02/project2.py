@@ -26,16 +26,16 @@ if __name__=="__main__":
         # this while loop will only execute if we have a valid number.
         while True:
             
-            # printing the text to the console for number
+            # Storing the value entered into the variable i.
             i = int(input())
             
-            # calling the factor method
+            # calling the factor method and passing in the user value in it so it can perform the modulo operation.
             factors = factor(i)
 
-            # printing the factors
+            # printing the factors, using the building str function to print like a string.
             print("factors are "+ str(factors))
 
-            # printing the number of factors
+            # printing the number of factors, using the building str function to print like a string. and the len function for the length of the array.
             print(" The number "+ str(i)+" has "+ str(len(factors)) + " factors")
 
             # check if the factors are having atleast 3
