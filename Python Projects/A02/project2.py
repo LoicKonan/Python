@@ -1,30 +1,37 @@
-num = int(input("Enter positive number : "))
-counter = 0
-comma = ""
-top = []
 
-sum = 0
+try:
+    num = int(input("Enter positive number : "))
 
-for i in range(1, (num+1)):
+    while not (input() == 'e' | input() == 'E'):
 
-    if(num % i == 0):
+        counter = 0
 
-        counter = counter + 1
+        comma = ""
 
-print(comma, i, end='')
+        top = []
 
-comma = ","
+        sum = 0
 
-if(counter < 4):
+        for i in range(1, (num+1)):
 
-    top.append(i)
+            if(num % i == 0):
 
-sum += i
+                counter = counter + 1
+                print(comma, i, end ='')
+                comma = ","
 
-print("\nTotal number of factor are : ", counter)
+            if(counter < 4):
 
-print("Top 3 : ", top)
+                top.append(i)
+                sum += i
 
-avg = float(sum)/3
+        print("\nTotal number of factor are : ", counter)
 
-print("Average is : ", avg)
+        print("Top 3 : ", top)
+
+        avg = float(sum)/3
+
+        print("Average is : ", avg)
+        
+except: 
+    print("You press E or e so good bye")
