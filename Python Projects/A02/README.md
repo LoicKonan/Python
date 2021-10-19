@@ -22,9 +22,9 @@
 
 ### Files
 
-|   #   | File               | Description                    |
-| :---: | ------------------ | ------------------------------ |
-|   1   | [main.py](main.py) | Solution for the first problem |
+|   #   | File               | Description                    | Status                  |
+| :---: | ------------------ | ------------------------------ | ----------------------- |
+|   1   | [main.py](main.py) | Solution for the first problem | :ballot_box_with_check: |
 
 
 
@@ -57,6 +57,6 @@
 
 ### Files
 
-|   #   | File                | Description                     |
-| :---: | ------------------- | ------------------------------- |
-|   1   | [main1.py](main.py) | Solution for the second problem |
+|   #   | File                | Description                     | Status                  |
+| :---: | ------------------- | ------------------------------- | ----------------------- |
+|   1   | [main1.py](main.py) | Solution for the second problem | :ballot_box_with_check: |
