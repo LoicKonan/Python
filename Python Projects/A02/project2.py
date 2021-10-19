@@ -17,12 +17,14 @@ def factor(a):
     return myArray
 
 if __name__=="__main__":
-
-    # printing the text to the console for number
-    i = int(input("Enter positive number : "))
     
     try:
+        print("Enter positive number : ")
+        
         while not(input() == 'e'):
+            
+            # printing the text to the console for number
+            i = int(input("Enter positive number : "))
             
             # calling the factor method
             factors = factor(i)
