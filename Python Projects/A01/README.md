@@ -32,9 +32,11 @@
 <h2 align = "center">Rock, Paper, Scissors Game </h2>
 
 > - Write a program that lets the user play the game of **Rock, Paper, Scissors** against the computer. The program should work as follows:
+>
 > **1.**
->   - When the program begins, a random number in the ***range of 1 through 3 is generated***.
->   - For this, you need to import the random library **(import random) and use the randint function (random.randint(1, 3))**
+>
+> - When the program begins, a random number in the ***range of 1 through 3 is generated***.
+> - For this, you need to import the random library **(import random) and use the randint function (random.randint(1, 3))**
 >
 > **2.**
 >
