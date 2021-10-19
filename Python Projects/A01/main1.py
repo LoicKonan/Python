@@ -1,6 +1,5 @@
-import random
+import random                   # the random library   
 
-random.seed(300)
 
 ######################################################################
 # This function receive the player and the computer numbers
