@@ -18,9 +18,10 @@ def factor(a):
 
 if __name__=="__main__":
     
+    print("Enter positive number : ")
+    
     try:
-        print("Enter positive number : ")
-        
+               
         while not(input() == 'e'):
             
             # printing the text to the console for number
