@@ -26,7 +26,8 @@
 | :---: | ------------------ | ------------------------------ | ----------------------- |
 |   1   | [main.py](main.py) | Solution for the first problem | :ballot_box_with_check: |
 
-
+<br>
+<br>
 
 <h2 align = "center">Rock, Paper, Scissors Game </h2>
 
