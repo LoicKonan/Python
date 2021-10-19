@@ -33,19 +33,20 @@ if __name__=="__main__":
             factors = factor(i)
 
             # printing the factors, using the building str function to print like a string.
-            print("factors are "+ str(factors))
+            print("Factors are "+ str(factors))
 
             # printing the number of factors, using the building str function to print like a string. and the len function for the length of the array.
-            print(" The number "+ str(i)+" has "+ str(len(factors)) + " factors")
+            print("The number " + str(i) + " has " + str(len(factors)) + " factors")
 
             # check if the factors are having atleast 3
             if len(factors) >= 10:
 
                 # print the top 3 factors
-                print(" Top 3 Factors are "+ str(factors[-1]) +","+ str(factors[-2]) +","+ str(factors[-3]))
+                print(" Top 3 Factors are " + str(factors[-1]) + ","+ str(factors[-2]) + "," + str(factors[-3]))
 
                 # print the average 3 factors, and using the round function to round the 3rd decimal points.
-                print("average of top 3 factors "+ str(round((factors[-1] + factors[-2] + factors[-3]) / 3),3))
+                average = round(((factors[-1] + factors[-2] + factors[-3]) / 3),3)
+                print("average of top 3 factors " + str(round((factors[-1] + factors[-2] + factors[-3]) / 3),3))
 
             # else print that number of factors are less than 3
             else:
