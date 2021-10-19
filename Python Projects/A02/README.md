@@ -4,7 +4,7 @@
 
 ### Description
 
-<h2 align = "center"> 10194 - Factors </h2>
+<h2 align = "center">Factors </h2>
 
 > - Write a program that will keep running (i.e. doing what is being asked below), till the user inputs an 'E' (for exit).
 > - Ask the user for a number.
@@ -28,7 +28,7 @@
 
 
 
-<h2 align = "center"> 10194 - Rock, Paper, Scissors Game </h2>
+<h2 align = "center">Rock, Paper, Scissors Game </h2>
 
 > - Write a program that lets the user play the game of Rock, Paper, Scissors against the computer. The program should work as follows:
 > - 1. When the program begins, a random number in the range of 1 through 3 is generated. 
