@@ -18,7 +18,7 @@ def factor(a):
 
 if __name__=="__main__":
     
-    print("Enter a positive number  or enter the letter e to end the program: ")
+    print("Enter a positive number  or the letter E to end the program: ")
     
     # This try block will make will run as long as the input enter a valid number. ie not the character 'E' or 'e'
     try:
@@ -50,6 +50,7 @@ if __name__=="__main__":
             # else print that number of factors are less than 3
             else:
                 print("This is too less - Good Bye ")
+                break
             
     # this except block will run when the user enter the E or 'e'. and end the program.
     except ValueError:
