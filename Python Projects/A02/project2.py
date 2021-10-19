@@ -39,7 +39,7 @@ if __name__=="__main__":
             print(" The number "+ str(i)+" has "+ str(len(factors)) + " factors")
 
             # check if the factors are having atleast 3
-            if len(factors) >= 3:
+            if len(factors) >= 10:
 
                 # print the top 3 factors
                 print(" Top 3 Factors are "+ str(factors[-1]) +","+ str(factors[-2]) +","+ str(factors[-3]))
@@ -49,7 +49,7 @@ if __name__=="__main__":
 
             # else print that number of factors are less than 3
             else:
-                print("number of factors are less than 3 ")
+                print("This is too less - Good Bye ")
             
     # this except block will run when the user enter the E or 'e'. and end the program.
     except ValueError:
