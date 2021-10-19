@@ -1,4 +1,4 @@
-## Project 02 - Factors && Rock, Paper, Scissors Game
+## Project 02 - Factors & Rock, Paper, Scissors Game
 
 ### Loic Konan
 
