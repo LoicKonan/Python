@@ -1,0 +1,21 @@
+import os
+
+import requests
+from bs4 import BeautifulSoup
+
+if not os.path.isfile("msu.html"):
+  page = requests.get("https://directory.msutexas.edu/users")
+  with open("msu.html","w") as f:
+    f.write(page.content)
+  page = page.content
+else:
+  with open("msu.html") as f:
+    page = f.read()
+
+soup = BeautifulSoup(page, "html.parser")
+
+dd = soup.findAll("dd")
+print(dd)
+
+for d in dd:
+  print(d.text)
