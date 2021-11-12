@@ -4,7 +4,11 @@
 
 ### Description
 
-> - Create a class called Cars. This class has two attributes to describe a car: car brand and price.
+> - Create a class called **Cars**.
+> - This class has **two attributes** to describe a car:
+>   - **car brand.**
+>   - **car price.**
+>
 > - Car brand should have character values such as Honda, BMW, etc. Price should have numeric values such as 21000, 35000, etc.
 > - These are the prices for each brand. (You can either take these values from the user, or hard-code them.
 > - The Cars class should also be able to show a car’s name by using a method called ShowBrand.
