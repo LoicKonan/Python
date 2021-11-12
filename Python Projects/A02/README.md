@@ -10,8 +10,8 @@
 >   - **car price.**
 >
 > - Car brand should have **character values** such as:
->   - Honda.
->   - BMW.
+>   - **Honda.**
+>   - **BMW.**
 >
 > - Price should have numeric values such as 21000, 35000, etc.
 > - These are the prices for each brand. (You can either take these values from the user, or hard-code them).
