@@ -10,9 +10,9 @@
 > - The Cars class should also be able to show a car’s name by using a method called ShowBrand.
 > - The Cars class should also be able to show a car’s price by using a method called ShowPrice.
 > - Using the Cars class, create two car objects. Their information is listed below:
-
-brand: Honda          price: 21000
-brand: BMW            price: 35000
+>
+> - **brand: Honda          price: 21000**
+> - **brand: BMW            price: 35000****
 
 ### Files
 
