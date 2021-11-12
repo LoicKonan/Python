@@ -16,6 +16,6 @@
 
 ### Files
 
-|   #   | File               | Description                    | Status                  |
-| :---: | ------------------ | ------------------------------ | ----------------------- |
-|   1   | [main.py](main.py) | Solution for the first problem | :ballot_box_with_check: |
+|   #   | File               | Description | Status                  |
+| :---: | ------------------ | ----------- | ----------------------- |
+|   1   | [main.py](main.py) | Solution    | :ballot_box_with_check: |
