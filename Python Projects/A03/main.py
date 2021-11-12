@@ -6,13 +6,11 @@ from tkinter import font
 from PyDictionary import PyDictionary
 
 # Create objects
-
 dictionary = PyDictionary()
 
 root = Tk()
 
 # Set geometry
-
 root.geometry("400X400")
 
 def dict():
