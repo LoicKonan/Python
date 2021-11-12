@@ -3,10 +3,10 @@
 from tkinter import*
 from tkinter import font
 
-from pydictionary import Dictionary
+from PyDictionary import PyDictionary
 
 # Create objects
-dictionary = Dictionary()
+dictionary = PyDictionary()
 
 root = Tk()
 
@@ -37,6 +37,20 @@ meaning = Label(frame1, text = "", font = ("Helvetica 10 bold"))
 meaning.pack()
 frame1.pack(pady = 10)
 
+# Frame 3rd
+frame2 = Frame(root)
+Label(frame2, text = "Synonym:- ", font= ("Helvetica 10 bold").pack(side = LEFT))
+synonym = Label(frame2, text = "", font = ("Helvetica 10"))
+synonym.pack()
+frame2.pack( pady = 10)
+
+# Frame 4th
+
+frame1 = Frame(root)
+Label(frame1, text = "Meaning:- ", font = ("Helvetica 10 bold")).pack(side = LEFT)
+meaning = Label(frame1, text = "", font = ("Helvetica 10 bold"))
+meaning.pack()
+frame1.pack(pady = 10)
 
 # Frame 3rd
 frame2 = Frame(root)
@@ -45,32 +59,6 @@ synonym = Label(frame2, text = "", font = ("Helvetica 10"))
 synonym.pack()
 frame2.pack( pady = 10)
 
-
-# Frame 4th
-frame3 = Frame(root)
-Label(frame3, text = "Meaning:- ", font = ("Helvetica 10 bold")).pack(side = LEFT)
-antonym = Label(frame3, text = "", font = ("Helvetica 10"))
-antonym.pack(side = LEFT)
-frame3.pack(pady = 10)
-Button(root, text = "Submit", font = ("Helvetica 15 bold"), conmmand = dict).pack()
-
 # Execute Tkinter 
 root.mainloop()
 
-
-# from pydictionary import Dictionary
-# dict = Dictionary("fix")
-
-# meanings_list = dict.meanings()
-
-# synonyms_list = dict.synonyms()
-
-# antonyms_list = dict.antonyms()
-
-# dict = Dictionary("fix",10)
-
-# dict.print_meanings("red")
-
-# dict.print_synonyms("green")
-
-# dict.print_antonyms("blue")
