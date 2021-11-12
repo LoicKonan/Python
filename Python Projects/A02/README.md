@@ -1,10 +1,18 @@
-## Project 02 - 
+## Project 02 - Car Class
 
 ### Loic Konan
 
 ### Description
 
-<h2 align = "center">Factors </h2>
+> - Create a class called Cars. This class has two attributes to describe a car: car brand and price.
+> - Car brand should have character values such as Honda, BMW, etc. Price should have numeric values such as 21000, 35000, etc. 
+> - These are the prices for each brand. (You can either take these values from the user, or hard-code them. It is up to you ... whatever is easier).
+> - The Cars class should also be able to show a car’s name by using a method called ShowBrand.
+> - The Cars class should also be able to show a car’s price by using a method called ShowPrice.
+> - Using the Cars class, create two car objects. Their information is listed below:
+
+brand: Honda          price: 21000
+brand: BMW            price: 35000
 
 ### Files
 
