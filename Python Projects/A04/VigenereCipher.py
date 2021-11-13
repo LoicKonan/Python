@@ -25,6 +25,7 @@ f1.pack(side = LEFT)
 # ==============================================
 #				 TIME
 # ==============================================
+
 localtime = time.asctime(time.localtime(time.time()))
 
 lblInfo = Label(Tops, font = ('helvetica', 50, 'bold'),
