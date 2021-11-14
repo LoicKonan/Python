@@ -182,7 +182,7 @@ if __name__ == "__main__":
     problemNum = sys.argv[1]
 
     # num = The Uva problem number.
-    # template = Location of cpp file you use as a peoject skeleton / template
+    # template = Location of cpp file you use as a project skeleton / template
     # saveFolder = A path where you want to save project folder. Remove this param to save in current folder.
 
     # pass in key value params to init UvaProject class
