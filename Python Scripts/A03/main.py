@@ -112,8 +112,8 @@ class UvaProject:
         URL = f"https://www.udebug.com/UVa/{self.num}"
         page = get(URL)
         soup = BeautifulSoup(page.content, "html.parser")
-        result = soup.find("div", class_="select_input_table")
-        links = result.findAll("a", class_="input_desc")
+        result = soup.find("div", class_ ="select_input_table")
+        links = result.findAll("a", class_ ="input_desc")
 
         dataIds = []
         for link in links:
@@ -187,5 +187,5 @@ if __name__ == "__main__":
 
     # pass in key value params to init UvaProject class
     proj = UvaProject(
-        num=problemNum, saveFolder="./InProgress/", template="./template/template.cpp"
+        num = problemNum, saveFolder ="./InProgress/", template ="./template/template.cpp"
     )
