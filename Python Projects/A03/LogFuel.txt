@@ -1,3 +1,6 @@
 User Input: 1 - See Current Fuel Level
 Fuel level shown: 25
 User Input: 4 – Exit
+User Input: 2 – Drive
+Miles to Drive: 50
+User Input: 4 – Exit
