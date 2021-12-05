@@ -76,6 +76,7 @@ if __name__ == "__main__":
     efficiency = 0
     tanksize = 0
     fileName = "FuelEffic.txt"
+    
     # Open the file in read mode
     with open(fileName, 'r') as f:
         first_line = f.readline().rstrip('\n').strip().split(':')
@@ -90,33 +91,33 @@ if __name__ == "__main__":
         myHybrid.addGas(9) # Add 9 gallons
         print("Fuel level: ", myHybrid.getGasLevel()) # Print fuel remaining
         
-        # Run the menu
-        choice = 0
-        while choice != 4:
-            # get user choice
-            choice = getMenuChoice()
-            # See Cureent Fuel
-            if choice == 1:
-                logMessage("User Input: 1 - See Current Fuel Level")
-                print("Fuel level: ", myHybrid.getGasLevel()) # Print fuel remaining
-                logMessage("Fuel level shown: " + str(myHybrid.getGasLevel()))
-            
-            elif choice == 2:
-                logMessage("User Input: 2 – Drive")
-                miles = int(input("How many miles to Drive: "))
-                logMessage("Miles to Drive: " + str(miles))
-                myHybrid.drive(miles) # Drive the car
-            
-            elif choice == 3:
-                logMessage("User Input: 3 – Add Gas")
-                gasToFill = int(input("How much gas to Add: "))
-                logMessage("Gas to Fill: " + str(gasToFill))
-                addedGas = myHybrid.addGas(gasToFill)
-                logMessage("Gas Added: " + str(addedGas))
-            
-            elif choice == 4:
-                logMessage("User Input: 4 – Exit")
-                print("Good Bye, see you soon!")
-            else:
-                logMessage("User Input: " + str(choice) +" - Invalid choice")
-                print("Invalid choice!")
+    # Run the menu
+    choice = 0
+    while choice != 4:
+        # get user choice
+        choice = getMenuChoice()
+        # See Cureent Fuel
+        if choice == 1:
+            logMessage("User Input: 1 - See Current Fuel Level")
+            print("Fuel level: ", myHybrid.getGasLevel()) # Print fuel remaining
+            logMessage("Fuel level shown: " + str(myHybrid.getGasLevel()))
+        
+        elif choice == 2:
+            logMessage("User Input: 2 – Drive")
+            miles = int(input("How many miles to Drive: "))
+            logMessage("Miles to Drive: " + str(miles))
+            myHybrid.drive(miles) # Drive the car
+        
+        elif choice == 3:
+            logMessage("User Input: 3 – Add Gas")
+            gasToFill = int(input("How much gas to Add: "))
+            logMessage("Gas to Fill: " + str(gasToFill))
+            addedGas = myHybrid.addGas(gasToFill)
+            logMessage("Gas Added: " + str(addedGas))
+        
+        elif choice == 4:
+            logMessage("User Input: 4 – Exit")
+            print("Good Bye, see you soon!")
+        else:
+            logMessage("User Input: " + str(choice) +" - Invalid choice")
+            print("Invalid choice!")
