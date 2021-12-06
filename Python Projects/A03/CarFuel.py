@@ -115,56 +115,79 @@ def getMenuChoice():
 
 if __name__ == "__main__":
         
-    # read tanksize and efficiency from text file
+    # Initialize the different variables that we will use.
     efficiency = 0
     tanksize = 0
     fileName = "FuelEffic.txt"
     
-    # Open the file in read mode
+    # Open the file in read mode and 
+    # read tanksize and efficiency from the FuelEffic.txt file
+    # and just grab the numbers by just slpliting them by the ':' 
+    # and removing any space.
     with open(fileName, 'r') as f:
         first_line = f.readline().rstrip('\n').strip().split(':')
         second_line = f.readline().rstrip('\n').strip().split(':')
         
+        # After slpliting it into 2 part now just grab the number. 
+        # since it should be element 1 of the array not element 0.
         efficiency = int(first_line[1])
         tanksize = int(second_line[1])
         
+        # Create an object call myHybrid from our class call Car.
         myHybrid = Car(efficiency, tanksize) # 20 miles per gallon
+        # Here we adding 25 gas in the tank.
         myHybrid.addGas(25)
        
-        myHybrid.drive(100) # Drive 100 miles
-        print("Fuel level: ", myHybrid.getGasLevel()) # Print fuel remaining
-       
-        myHybrid.addGas(9) # Add 9 gallons
-        print("Fuel level: ", myHybrid.getGasLevel()) # Print fuel remaining
+        # Drive 100 miles
+        myHybrid.drive(100) 
         
-    # Run the menu
+        # Print fuel remaining
+        print("Fuel level: ", myHybrid.getGasLevel()) 
+       
+        # Add 9 gallons
+        myHybrid.addGas(9) 
+        
+        # Print fuel remaining
+        print("Fuel level: ", myHybrid.getGasLevel())
+        
+        
+    # The Menu choice using a while loop.
     choice = 0
     while choice != 4:
         # get user choice
         choice = getMenuChoice()
        
-        # See Cureent Fuel
+        # if the choice is 1 then we just print the Current Fuel Level.
         if choice == 1:
-            logMessage("User Input: 1 - See Current Fuel Level")
-            print("Fuel level: ", myHybrid.getGasLevel()) # Print fuel remaining
+            logMessage("User Input: 1 -- See Current Fuel Level")
+            
+            # Print fuel remaining
+            print("Fuel level: ", myHybrid.getGasLevel()) 
             logMessage("Fuel level shown: " + str(myHybrid.getGasLevel()))
         
+        # if the user choice is 2 then We print the Drive.
         elif choice == 2:
-            logMessage("User Input: 2 – Drive")
+            logMessage("User Input: 2 -- Drive")
             miles = int(input("How many miles to Drive: "))
             logMessage("Miles to Drive: " + str(miles))
-            myHybrid.drive(miles) # Drive the car
+            
+            # Drive the car
+            myHybrid.drive(miles) 
         
+        # if the user choice is 3 then we add gas to the tank.
         elif choice == 3:
-            logMessage("User Input: 3 – Add Gas")
+            logMessage("User Input: 3 -- Add Gas")
             gasToFill = int(input("How much gas to Add: "))
             logMessage("Gas to Fill: " + str(gasToFill))
             addedGas = myHybrid.addGas(gasToFill)
             logMessage("Gas Added: " + str(addedGas))
         
+        # if the user choice is 4 then we Exit.
         elif choice == 4:
-            logMessage("User Input: 4 – Exit")
-            print("Good Bye, see you soon!")
+            logMessage("User Input: 4 -- Exit")
+            print("Good Bye \n Au revoir\n see you soon!!!")
+            
+        # Here if the user choice is invalid then we print invalid choice.
         else:
             logMessage("User Input: " + str(choice) +" - Invalid choice")
             print("Invalid choice!")
