@@ -92,13 +92,19 @@ def logMessage(message):
 #############################################
 
 def getMenuChoice():
-    print("**** WELCOME TO EBY\
-          CAR DASHBOARD ****")
-    print("1. See Current Fuel Level")
-    print("2. Drive")
-    print("3. Add Gas")
-    print("4. Exit")
-    return int(input("Enter your choice (1-4): "))
+    print("""\n\n\t    ###########################################
+            #                                         #
+            #              Welcome To                 #
+            #               Eby Anet                  #
+            #             CAR DASHBOARD               #
+            #                                         #
+            #       [1] -- See Current Fuel Level     #
+            #       [2] -- Drive                      #
+            #       [3] -- Add Gas                    #
+            #       [4] -- Exit                       #
+            #                                         #
+            ###########################################""")
+    return int(input("\t    Enter your choice (1-4): "))
   
   
 ########################
