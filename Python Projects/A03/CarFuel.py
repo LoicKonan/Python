@@ -92,7 +92,8 @@ def logMessage(message):
 #############################################
 
 def getMenuChoice():
-    print("**** MENU ****")
+    print("**** WELCOME TO EBY\
+          CAR DASHBOARD ****")
     print("1. See Current Fuel Level")
     print("2. Drive")
     print("3. Add Gas")
