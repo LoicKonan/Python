@@ -69,9 +69,9 @@ class Car:
 
 
 #########################################
-#     This method will Open
-#     the  LogFuel.txt and add 
-#     whatever info the user will add.
+#     This method will Open             #
+#     the  LogFuel.txt and add          #
+#     whatever info the user will add.  #
 #########################################
 
 def logMessage(message):
@@ -86,13 +86,11 @@ def logMessage(message):
   
 
 
-##########################################
-#     This method 
-#     Prints the menu and get user choice
-#
-#########################################
+#############################################
+#     This method will Dsiplay              #
+#     the menu and get the user choice      #
+#############################################
 
-#Prints the menu and get user choice
 def getMenuChoice():
     print("**** MENU ****")
     print("1. See Current Fuel Level")
