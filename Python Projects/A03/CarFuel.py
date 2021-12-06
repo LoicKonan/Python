@@ -32,17 +32,21 @@ class Car:
             return 0
         
         # else if the the fuel in the tank + the added fuel is 
-        # greater than the tank size then return
+        # greater than the tank size then return and print 
+        # the amount of fuel that was added.
         elif self.__fuelLevel + level > self.__tankSize:
             print("Gas Added: ", self.__tankSize - self.__fuelLevel)
             self.__fuelLevel = self.__tankSize
             return self.__tankSize - self.__fuelLevel
        
+       # else it is not full so just print the amount of fuel
+       # added and return the level.
         else:
             print("Gas Added: ", level)
             self.__fuelLevel += level
             return level
     
+    #
     def drive(self, distance):
        
         # calculate gallons required to travel the given distance
