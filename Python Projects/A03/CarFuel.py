@@ -162,13 +162,13 @@ if __name__ == "__main__":
             logMessage("User Input: 1 -- See Current Fuel Level")
             
             # Print fuel remaining
-            print("Fuel level: ", myHybrid.getGasLevel()) 
+            print("\tFuel level: ", myHybrid.getGasLevel()) 
             logMessage("Fuel level shown: " + str(myHybrid.getGasLevel()))
         
         # if the user choice is 2 then We print the Drive.
         elif choice == 2:
             logMessage("User Input: 2 -- Drive")
-            miles = int(input("How many miles to Drive: "))
+            miles = int(input("\tHow many miles to Drive: "))
             logMessage("Miles to Drive: " + str(miles))
             
             # Drive the car
@@ -177,7 +177,7 @@ if __name__ == "__main__":
         # if the user choice is 3 then we add gas to the tank.
         elif choice == 3:
             logMessage("User Input: 3 -- Add Gas")
-            gasToFill = int(input("How much gas to Add: "))
+            gasToFill = int(input("\tHow much gas to Add: "))
             logMessage("Gas to Fill: " + str(gasToFill))
             addedGas = myHybrid.addGas(gasToFill)
             logMessage("Gas Added: " + str(addedGas))
@@ -185,9 +185,9 @@ if __name__ == "__main__":
         # if the user choice is 4 then we Exit.
         elif choice == 4:
             logMessage("User Input: 4 -- Exit")
-            print("Good Bye \n Au revoir\n see you soon!!!")
+            print("\tGood Bye \n\t Au revoir\n\t see you soon!!!")
             
         # Here if the user choice is invalid then we print invalid choice.
         else:
             logMessage("User Input: " + str(choice) +" - Invalid choice")
-            print("Invalid choice!")
+            print("\tInvalid choice!")
