@@ -4,3 +4,8 @@ User Input: 4 ï¿½ Exit
 User Input: 2 ï¿½ Drive
 Miles to Drive: 50
 User Input: 4  Exit
+User Input: 25 - Invalid choice
+User Input: 5 - Invalid choice
+User Input: 2 – Drive
+Miles to Drive: 25
+User Input: 4 – Exit
