@@ -1,33 +1,38 @@
-'''
-Object-Oriented Programming
-Class: Car
-'''
+################################### 
+#########   Class Car  ############ 
+################################### 
 class Car:
-    # A car has a certain fuel efficiency (measured in miles/gallon)
-    # and a certain amount of fuel in the gas tank.
+    
+    # This is the Constructor for the Car class.
+    # where we define the efficiency and the initial fuel level to 0.
     def __init__(self, efficiency, tanksize):
         
-        # The efficiency is specified in the constructor,
-        # and the initial fuel level is 0.
+        # initial fuel level is 0.
         self.__fuelLevel = 0
        
-        # measured in miles/gallon
+        # The efficiency is specified here.
         self.__efficiency = efficiency
+        
+        # Variable for the tank size.
         self.__tankSize = tanksize
             
-    # returns current fuel level
+            
+    # This method will returns current fuel level.
     def getGasLevel(self):
         return self.__fuelLevel
     
-    # adds gas to the tank and returns how many gallons added
+    # This method will adds gas to the tank 
+    # and returns how many gallons added.
     def addGas(self, level):
     
-        # if the added fuel exceeds the tank size,
-        # have the full tank gas
+        # if the fuel in the tank size is already equal to the
+        # size of the tank size then print tank is full and return 0.
         if self.__fuelLevel == self.__tankSize:
             print("Tank is already full")
             return 0
         
+        # else if the the fuel in the tank + the added fuel is 
+        # greater than the tank size then return
         elif self.__fuelLevel + level > self.__tankSize:
             print("Gas Added: ", self.__tankSize - self.__fuelLevel)
             self.__fuelLevel = self.__tankSize
