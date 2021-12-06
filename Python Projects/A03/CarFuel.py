@@ -46,14 +46,20 @@ class Car:
             self.__fuelLevel += level
             return level
     
-    #
+    # This Method will determine the amount of gallons required
+    # to travel a given distance. 
     def drive(self, distance):
        
         # calculate gallons required to travel the given distance
         gallonsRequired = distance / self.__efficiency
+        
+        # Here if the if the fuel if the fuel we 
+        # is to small to make the trip then print not enough fuel.
         if self.__fuelLevel - gallonsRequired < 0:
             print("Car does not have enough gas to drive: ", distance)
         
+        # else if we have enough fuel print the distance and amount 
+        # of fuel left.
         else:
             # Reduce the consumed gallon
             self.__fuelLevel -= gallonsRequired
@@ -61,9 +67,13 @@ class Car:
             print("You drove ", distance, " miles. You can drive another ", milesToDrive, "on this gas")
 
 
-'''
-Logs the message to LogFuel.txt File
-'''
+
+#########################################
+#     This method will Open
+#     the  LogFuel.txt and add 
+#     whatever info the user will add.
+#########################################
+
 def logMessage(message):
     # Open the file in append mode
     f = open("LogFuel.txt", "a")
@@ -76,6 +86,12 @@ def logMessage(message):
   
 
 
+##########################################
+#     This method 
+#     Prints the menu and get user choice
+#
+#########################################
+
 #Prints the menu and get user choice
 def getMenuChoice():
     print("**** MENU ****")
@@ -85,6 +101,13 @@ def getMenuChoice():
     print("4. Exit")
     return int(input("Enter your choice (1-4): "))
   
+  
+########################
+#                      #
+#  The Main Driver.    #
+#                      #
+########################
+
 if __name__ == "__main__":
         
     # read tanksize and efficiency from text file
