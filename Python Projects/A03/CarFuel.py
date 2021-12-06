@@ -24,25 +24,25 @@ class Car:
     # This method will adds gas to the tank 
     # and returns how many gallons added.
     def addGas(self, level):
-    
+
         # if the fuel in the tank size is already equal to the
         # size of the tank size then print tank is full and return 0.
         if self.__fuelLevel == self.__tankSize:
-            print("Tank is already full")
+            print("\t    Tank is already full")
             return 0
         
         # else if the the fuel in the tank + the added fuel is 
         # greater than the tank size then return and print 
         # the amount of fuel that was added.
         elif self.__fuelLevel + level > self.__tankSize:
-            print("Gas Added: ", self.__tankSize - self.__fuelLevel)
+            print("\t    Gas Added: ", self.__tankSize - self.__fuelLevel)
             self.__fuelLevel = self.__tankSize
             return self.__tankSize - self.__fuelLevel
        
        # else it is not full so just print the amount of fuel
        # added and return the level.
         else:
-            print("Gas Added: ", level)
+            print("\t    Gas Added: ", level)
             self.__fuelLevel += level
             return level
     
@@ -56,7 +56,7 @@ class Car:
         # Here if the if the fuel if the fuel we 
         # is to small to make the trip then print not enough fuel.
         if self.__fuelLevel - gallonsRequired < 0:
-            print("Car does not have enough gas to drive: ", distance)
+            print("\t    Car does not have enough gas to drive: ", distance)
         
         # else if we have enough fuel print the distance and amount 
         # of fuel left.
@@ -64,7 +64,7 @@ class Car:
             # Reduce the consumed gallon
             self.__fuelLevel -= gallonsRequired
             milesToDrive = self.__fuelLevel * self.__efficiency
-            print("You drove ", distance, " miles. You can drive another ", milesToDrive, "on this gas")
+            print("\t    You drove ", distance, " miles. You can drive another ", milesToDrive, "on this gas")
 
 
 
@@ -133,6 +133,8 @@ if __name__ == "__main__":
         efficiency = int(first_line[1])
         tanksize = int(second_line[1])
         
+        print("\n\n\t   ##############################  Example  #############################\n")
+
         # Create an object call myHybrid from our class call Car.
         myHybrid = Car(efficiency, tanksize) # 20 miles per gallon
         # Here we adding 25 gas in the tank.
@@ -142,16 +144,18 @@ if __name__ == "__main__":
         myHybrid.drive(100) 
         
         # Print fuel remaining
-        print("Fuel level: ", myHybrid.getGasLevel()) 
+        print("\t    Fuel level: ", myHybrid.getGasLevel()) 
        
         # Add 9 gallons
         myHybrid.addGas(9) 
         
         # Print fuel remaining
-        print("Fuel level: ", myHybrid.getGasLevel())
+        print("\t    Fuel level: ", myHybrid.getGasLevel())
+        print("\n\t   #####################################################################")
         
         
-    # The Menu choice using a while loop.
+    # Now using The Menu choice for the user, using a while loop
+    # and if statement to validate the input.
     choice = 0
     while choice != 4:
         # get user choice
@@ -162,13 +166,13 @@ if __name__ == "__main__":
             logMessage("User Input: 1 -- See Current Fuel Level")
             
             # Print fuel remaining
-            print("\tFuel level: ", myHybrid.getGasLevel()) 
+            print("\t    Fuel level: ", myHybrid.getGasLevel()) 
             logMessage("Fuel level shown: " + str(myHybrid.getGasLevel()))
         
         # if the user choice is 2 then We print the Drive.
         elif choice == 2:
             logMessage("User Input: 2 -- Drive")
-            miles = int(input("\tHow many miles to Drive: "))
+            miles = int(input("\t    How many miles to Drive: "))
             logMessage("Miles to Drive: " + str(miles))
             
             # Drive the car
@@ -177,7 +181,7 @@ if __name__ == "__main__":
         # if the user choice is 3 then we add gas to the tank.
         elif choice == 3:
             logMessage("User Input: 3 -- Add Gas")
-            gasToFill = int(input("\tHow much gas to Add: "))
+            gasToFill = int(input("\t    How much gas to Add: "))
             logMessage("Gas to Fill: " + str(gasToFill))
             addedGas = myHybrid.addGas(gasToFill)
             logMessage("Gas Added: " + str(addedGas))
@@ -185,9 +189,9 @@ if __name__ == "__main__":
         # if the user choice is 4 then we Exit.
         elif choice == 4:
             logMessage("User Input: 4 -- Exit")
-            print("\tGood Bye \n\t Au revoir\n\t see you soon!!!")
+            print("\t    Good Bye \n\t    Au revoir\n\t    see you soon!!!")
             
         # Here if the user choice is invalid then we print invalid choice.
         else:
             logMessage("User Input: " + str(choice) +" - Invalid choice")
-            print("\tInvalid choice!")
+            print("\t    Invalid choice!")

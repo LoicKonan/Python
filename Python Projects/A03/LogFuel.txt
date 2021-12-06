@@ -1,14 +1,18 @@
-User Input: 1 - See Current Fuel Level
-Fuel level shown: 25
-User Input: 4 ï¿½ Exit
-User Input: 2 ï¿½ Drive
-Miles to Drive: 50
-User Input: 4  Exit
-User Input: 25 - Invalid choice
-User Input: 5 - Invalid choice
-User Input: 2 – Drive
-Miles to Drive: 25
-User Input: 4 – Exit
+
 User Input: 1 -- See Current Fuel Level
 Fuel level shown: 25
 User Input: 2 -- Drive
+Miles to Drive: 52
+User Input: 3 -- Add Gas
+Gas to Fill: 3
+Gas Added: 0
+User Input: 3 -- Add Gas
+Gas to Fill: 54
+Gas Added: 0
+User Input: 4 -- Exit
+User Input: 1 -- See Current Fuel Level
+Fuel level shown: 25
+User Input: 2 -- Drive
+Miles to Drive: 3
+User Input: 5 - Invalid choice
+User Input: 4 -- Exit
