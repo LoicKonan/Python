@@ -1,18 +1,4 @@
 '''
-Logs the message to LogFuel.txt File
-'''
-def logMessage(message):
-    # Open the file in append mode
-    f = open("LogFuel.txt", "a")
-    
-    # write the message
-    f.write(message + "\n")
-    
-    # Calose the file
-    f.close()
-  
-
-'''
 Object-Oriented Programming
 Class: Car
 '''
@@ -64,6 +50,21 @@ class Car:
             self.__fuelLevel -= gallonsRequired
             milesToDrive = self.__fuelLevel * self.__efficiency
             print("You drove ", distance, " miles. You can drive another ", milesToDrive, "on this gas")
+
+
+'''
+Logs the message to LogFuel.txt File
+'''
+def logMessage(message):
+    # Open the file in append mode
+    f = open("LogFuel.txt", "a")
+    
+    # write the message
+    f.write(message + "\n")
+    
+    # Calose the file
+    f.close()
+  
 
 
 #Prints the menu and get user choice
