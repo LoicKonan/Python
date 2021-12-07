@@ -104,7 +104,6 @@ def getMenuChoice():
             ###########################################""")
     return int(input("\t    Enter your choice (1-4): "))
   
-  
 ########################
 #                      #
 #  The Main Driver.    #
@@ -115,8 +114,8 @@ if __name__ == "__main__":
         
     # Initialize the different variables that we will use.
     efficiency = 0
-    tanksize = 0
-    fileName = "FuelEffic.txt"
+    tanksize   = 0
+    fileName   = "FuelEffic.txt"
     
     # Open the file in read mode and 
     # read tanksize and efficiency from the FuelEffic.txt file
