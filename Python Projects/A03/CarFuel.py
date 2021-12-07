@@ -67,7 +67,6 @@ class Car:
             print("\t    You drove ", distance, " miles. You can drive another ", milesToDrive, "on this gas")
 
 
-
 #########################################
 #     This method will Open             #
 #     the  LogFuel.txt and add          #
@@ -84,7 +83,6 @@ def logMessage(message):
     # Calose the file
     f.close()
   
-
 
 #############################################
 #     This method will Dsiplay              #
