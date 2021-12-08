@@ -1,5 +1,8 @@
-friends = ['joseph', 'jose', 'glen']
+x = 'From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008'
 
-friends[0] = 'koffe'
+a = x.split()
 
-print(friends)
+b = a[1]
+
+b = b.split('@')
+print(b[1])
