@@ -1,3 +1,9 @@
+# In this Program, we will first take the path of image and 
+# encryption key as input from the user then we use the file.
+# Then we will again apply the same XOR operation on an encrypted image to decrypt it. 
+# But always remember that our encryption key and decryption key must be the same.
+
+
 # try block to handle the exception
 try:
 	# take path of image as a input
