@@ -1,0 +1,21 @@
+{
+	"web": {
+		"languages": [
+			{
+				"id": "1",
+				"name": "PHP",
+				"website": "https://www.php.net/"
+			},
+			{
+				"id": "2",
+				"name": "Python",
+				"website": "https://www.python.org/"
+			},
+			{
+				"id": "3",
+				"name": "Java",
+				"website": "https://www.java.com/en/"
+			}
+		]
+	}
+}
