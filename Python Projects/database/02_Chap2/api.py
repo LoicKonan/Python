@@ -42,16 +42,29 @@ class DatabaseCursor(object):
 
 description = """🚀 FastAPI + PostgreSQL """
 
-app = FastAPI()
+app = FastAPI(
+    title = "LOIC API Project 01",
+    description = description,
+    version = "0.0.1",
+    contact = {
+        "name": "Loic K",
+        "url": "https://www.linkedin.com/in/loickonan/",
+    },
+    license_info = {
+        "name": "Apache 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.html",
+    },
+)
 
 @app.get("/")
 async def docs_redirect():
-    """Api's base route that displays the information created above in the Api Info section."""
+    """WELCOME TO THE WORLD AIRPORTS DATABASE API
+    Api's base route that displays the information created above in the Api Info section."""
     return RedirectResponse(url="/docs")
-
 
 @app.get("/airports2")
 async def airports2():
+    """Display all the AIRPORTS from the World."""
     sql = "select * from airports2"
 
     with DatabaseCursor(".config.json") as cur:
@@ -61,6 +74,7 @@ async def airports2():
 
 @app.get("/airport/{country}")
 async def airports2(country):
+    """Display all the AIRPORTS from a specific country."""
     sql = f"""SELECT * from airports2 
               WHERE country = '{country}'"""
 
@@ -71,6 +85,7 @@ async def airports2(country):
 
 @app.get("/airportCount")
 async def airports2(country: str):
+    """Display the total number of AIRPORTS from a specific country."""
     sql = f"""SELECT count(*) from airports2 
               WHERE country = '{country}'"""
 
