@@ -92,7 +92,9 @@ print("Number of scores entered: ", counter)
 
 # Calculate the Total of the numbers entered by the user, excluding the highest and lowest values.
 total = total - max - min
-print("total: ", total)
+print("The minimum score is: ", min)
+print("The maximum score is: ", max)
+print("The total of the scores excluding the highest and lowest scores is: ", total)
 
 # Calculate average, excluding the highest and lowest values.
 average = total / (counter - 2)      
