@@ -8,8 +8,8 @@
 #      Semester:         Fall 2022
 #      Description:
 #                        This program ask the user to enter at least 5 numbers including
-#                        floating point numbers. The program has a sentinel number
-#                        to indicate that the user is done entering numbers. 
+#                        floating point numbers (Numbers between 0-10 inclusive). 
+#                        A sentinel number will indicate, the user is done entering numbers. 
 #                        The program will print the average of the numbers entered 
 #                        excluding the highest and lowest numbers.
 #  
@@ -31,8 +31,8 @@ print('''#######################################################################
 #      Semester:         Fall 2022
 #      Description:
 #                        This program ask the user to enter at least 5 numbers including
-#                        floating point numbers. The program has a sentinel number
-#                        to indicate that the user is done entering numbers. 
+#                        floating point numbers (Numbers between 0-10 inclusive). 
+#                        A sentinel number will indicate, the user is done entering numbers.
 #                        The program will print the average of the numbers entered 
 #                        excluding the highest and lowest numbers.
 #  
