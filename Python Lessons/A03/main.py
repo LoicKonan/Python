@@ -1,4 +1,3 @@
-
 # Description: This program will Write a codebreaker program that will use the key below to encode or decode a document.
 # You will be given an encrypted infile.txt to decode.
 # Key
@@ -22,9 +21,13 @@
     # s = {
     # t = =
     # y = ]
+    
 # All other characters will remain the same. 
 
 # Open infile.txt for reading. 
+from email.policy import strict
+
+
 file = open('infile.txt', 'r')
 
 # Read infile.txt
@@ -60,8 +63,7 @@ new_string = "".join(key.get(char, char) for char in file)
 # Print the new string
 print(new_string)
 
-# close the file
-file.close()
+# Decode the string
 
-
+print(str.encode('utf-8'),'strict')
  
