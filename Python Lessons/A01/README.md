@@ -31,7 +31,19 @@
 python main.py
 ```
 
-
+### Output Example
+    
+        ```bash
+        Enter the cost of one widget: 10
+        Enter the quantity of widgets to be purchased: 5
+        Enter the discount rate: 0.40
+    
+        Subtotal: 50.0
+        Discount: 20.0
+        Tax Amount: 4.25
+        Total: 25.75
+        ```
+        
 ### Files
 
 |   #   | File               | Description | Status                  |

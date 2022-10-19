@@ -20,6 +20,19 @@
 python main.py
 ```
 
+### Output Example
+    
+    ```bash
+    Enter a number (or -1 to stop): 1
+    Enter a number (or -1 to stop): 2
+    Enter a number (or -1 to stop): 3
+    Enter a number (or -1 to stop): 4
+    Enter a number (or -1 to stop): 5
+    Enter a number (or -1 to stop): 6
+
+    The average of the numbers is: 3.5
+    ```
+    
 
 ### Files
 
